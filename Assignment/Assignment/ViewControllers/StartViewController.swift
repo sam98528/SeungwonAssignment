@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  PetFitTemp
 //
-//  Created by Sam.Lee on 7/30/24.
+//  Created by Sam.Lee on 8/7/24.
 //
 
 import UIKit
@@ -135,7 +135,7 @@ class StartViewController : BaseViewController {
             let nextVC = LoginViewController()
             let navVC = UINavigationController(rootViewController: nextVC)
             navVC.modalPresentationStyle = .fullScreen
-            self?.present(navVC, animated: false)
+            self?.present(navVC, animated: true)
         }).disposed(by: disposeBag)
     }
     @objc func handleTap(gesture: UITapGestureRecognizer) {
@@ -161,13 +161,10 @@ class StartViewController : BaseViewController {
         
         if NSLocationInRange(index, termsRange) {
             print("서비스 이용약관 클릭됨")
-            // 서비스 이용약관 클릭 시 동작
         } else if NSLocationInRange(index, privacyRange) {
             print("개인정보 처리방침 클릭됨")
-            // 개인정보 처리방침 클릭 시 동작
         } else if NSLocationInRange(index, locationRange) {
             print("위치정보 이용약관 클릭됨")
-            // 위치정보 이용약관 클릭 시 동작
         }
     }
 }

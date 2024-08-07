@@ -20,6 +20,15 @@
 		14808B5B2C63981600757CF6 /* Gyounggi_Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14808B5A2C63981600757CF6 /* Gyounggi_Medium.ttf */; };
 		14808B5D2C639CD700757CF6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14808B5C2C639CD700757CF6 /* LoginViewController.swift */; };
 		14808B602C63ACC800757CF6 /* LoginCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14808B5E2C63ACC800757CF6 /* LoginCoreData.xcdatamodeld */; };
+		14808B672C63AFFB00757CF6 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14808B662C63AFFB00757CF6 /* UserModel.swift */; };
+		14808B6D2C63B05D00757CF6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14808B6C2C63B05D00757CF6 /* CoreDataManager.swift */; };
+		14808B702C63B0AB00757CF6 /* UserModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14808B6E2C63B0AB00757CF6 /* UserModel+CoreDataClass.swift */; };
+		14808B712C63B0AB00757CF6 /* UserModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14808B6F2C63B0AB00757CF6 /* UserModel+CoreDataProperties.swift */; };
+		14808B732C63B2A500757CF6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14808B722C63B2A500757CF6 /* SignUpViewController.swift */; };
+		14808B752C63B67D00757CF6 /* BaseViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14808B742C63B67D00757CF6 /* BaseViewControllerExtension.swift */; };
+		14808B772C63C82800757CF6 /* NickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14808B762C63C82800757CF6 /* NickNameViewController.swift */; };
+		14808B792C63D3F300757CF6 /* LoginPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14808B782C63D3F300757CF6 /* LoginPasswordController.swift */; };
+		14808B7F2C63D7D500757CF6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14808B7E2C63D7D500757CF6 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +44,15 @@
 		14808B5A2C63981600757CF6 /* Gyounggi_Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gyounggi_Medium.ttf; sourceTree = "<group>"; };
 		14808B5C2C639CD700757CF6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		14808B5F2C63ACC800757CF6 /* LoginCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoginCoreData.xcdatamodel; sourceTree = "<group>"; };
+		14808B662C63AFFB00757CF6 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		14808B6C2C63B05D00757CF6 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		14808B6E2C63B0AB00757CF6 /* UserModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		14808B6F2C63B0AB00757CF6 /* UserModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		14808B722C63B2A500757CF6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		14808B742C63B67D00757CF6 /* BaseViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerExtension.swift; sourceTree = "<group>"; };
+		14808B762C63C82800757CF6 /* NickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameViewController.swift; sourceTree = "<group>"; };
+		14808B782C63D3F300757CF6 /* LoginPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordController.swift; sourceTree = "<group>"; };
+		14808B7E2C63D7D500757CF6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,8 @@
 		14808B272C6390AE00757CF6 = {
 			isa = PBXGroup;
 			children = (
+				14808B6E2C63B0AB00757CF6 /* UserModel+CoreDataClass.swift */,
+				14808B6F2C63B0AB00757CF6 /* UserModel+CoreDataProperties.swift */,
 				14808B322C6390AE00757CF6 /* Assignment */,
 				14808B312C6390AE00757CF6 /* Products */,
 			);
@@ -70,6 +90,7 @@
 		14808B322C6390AE00757CF6 /* Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				14808B652C63AFF000757CF6 /* Model */,
 				14808B582C63980100757CF6 /* Resource */,
 				14808B572C63921600757CF6 /* Service */,
 				14808B562C6391ED00757CF6 /* Util */,
@@ -84,9 +105,12 @@
 		14808B4F2C63912700757CF6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				14808B7D2C63D7BF00757CF6 /* MainPage */,
+				14808B7B2C63D4AF00757CF6 /* OriginalUser */,
+				14808B7A2C63D4A600757CF6 /* NewUser */,
 				14808B502C63913000757CF6 /* Base */,
+				14808B7C2C63D7AD00757CF6 /* Login */,
 				14808B372C6390AE00757CF6 /* StartViewController.swift */,
-				14808B5C2C639CD700757CF6 /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -103,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				14808B542C6391E400757CF6 /* UIColorExtension.swift */,
+				14808B742C63B67D00757CF6 /* BaseViewControllerExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -120,6 +145,7 @@
 		14808B572C63921600757CF6 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				14808B6C2C63B05D00757CF6 /* CoreDataManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -139,6 +165,47 @@
 				14808B5A2C63981600757CF6 /* Gyounggi_Medium.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		14808B652C63AFF000757CF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14808B662C63AFFB00757CF6 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14808B7A2C63D4A600757CF6 /* NewUser */ = {
+			isa = PBXGroup;
+			children = (
+				14808B722C63B2A500757CF6 /* SignUpViewController.swift */,
+				14808B762C63C82800757CF6 /* NickNameViewController.swift */,
+			);
+			path = NewUser;
+			sourceTree = "<group>";
+		};
+		14808B7B2C63D4AF00757CF6 /* OriginalUser */ = {
+			isa = PBXGroup;
+			children = (
+				14808B782C63D3F300757CF6 /* LoginPasswordController.swift */,
+			);
+			path = OriginalUser;
+			sourceTree = "<group>";
+		};
+		14808B7C2C63D7AD00757CF6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				14808B5C2C639CD700757CF6 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		14808B7D2C63D7BF00757CF6 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				14808B7E2C63D7D500757CF6 /* MainViewController.swift */,
+			);
+			path = MainPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,7 +294,16 @@
 				14808B552C6391E400757CF6 /* UIColorExtension.swift in Sources */,
 				14808B342C6390AE00757CF6 /* AppDelegate.swift in Sources */,
 				14808B602C63ACC800757CF6 /* LoginCoreData.xcdatamodeld in Sources */,
+				14808B732C63B2A500757CF6 /* SignUpViewController.swift in Sources */,
+				14808B7F2C63D7D500757CF6 /* MainViewController.swift in Sources */,
+				14808B702C63B0AB00757CF6 /* UserModel+CoreDataClass.swift in Sources */,
+				14808B792C63D3F300757CF6 /* LoginPasswordController.swift in Sources */,
+				14808B712C63B0AB00757CF6 /* UserModel+CoreDataProperties.swift in Sources */,
+				14808B672C63AFFB00757CF6 /* UserModel.swift in Sources */,
+				14808B772C63C82800757CF6 /* NickNameViewController.swift in Sources */,
 				14808B362C6390AE00757CF6 /* SceneDelegate.swift in Sources */,
+				14808B6D2C63B05D00757CF6 /* CoreDataManager.swift in Sources */,
+				14808B752C63B67D00757CF6 /* BaseViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
